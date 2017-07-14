@@ -21,7 +21,9 @@ class App extends Component {
     this.socket = io.connect("http://ec2-34-212-134-187.us-west-2.compute.amazonaws.com:9090");
        this.socket.on('widget:data', data =>
       //  console.log(JSON.parse(data.message).Root.BinaryInSet.Entry)
-      this.setState({locations:JSON.parse(data.message).Root.BinaryInSet.Entry})
+      this.setState({locations:JSON.parse(data.message).Root.BinaryInSet.Entry.splice(0,8)})
+      
+      // splice array to get first of eight object contains data for two location
       )
   }
 

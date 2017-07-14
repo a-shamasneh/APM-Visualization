@@ -11,9 +11,15 @@ class D3 extends Component{
 render(){
     console.log('this.props',this.props.data)
     return(
-        <div>
-            <h1>{this.props.data.length}</h1>
-         </div>
+     <div>
+        {
+            this.props.data.map((elem,key)=>{
+                return(
+               <li key={key}>{elem.Name}<p>{elem.Value}</p></li>     
+                )
+            })
+        }
+          </div>
     )
 }
 }
