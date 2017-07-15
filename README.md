@@ -21,7 +21,7 @@ A step by step series of examples that tell you have to get a development env ru
 clone this repo on your device
 ```
 ```
-Go to npm directory
+Go to apm directory
 ```
 ```
 Run npm install
