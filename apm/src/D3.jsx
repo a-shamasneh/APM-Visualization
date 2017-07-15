@@ -10,6 +10,7 @@ render(){
     return(
         
      <div>Apm-Vizualization
+         The Active location will be fill green!!
          <hr/>
          APM1
          <ul className="list-inline">
